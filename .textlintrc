@@ -1,0 +1,12 @@
+{
+    "rules": {
+        "no-mix-dearu-desumasu": {
+            "preferInHeader": "",
+            "preferInBody": "である",
+            "preferInList": "である",
+            "strict": true
+        },
+        "no-hankaku-kana": true,
+        "ja-no-abusage": true
+    }
+}
