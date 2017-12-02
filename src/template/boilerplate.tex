@@ -1,0 +1,22 @@
+\documentclass[a4paper, uplatex, dvipdfmx]{jsreport}
+\usepackage{amsmath, amssymb}
+\usepackage[deluxe]{otf}
+\usepackage[noto]{pxchfon}
+\usepackage{newtxtext, newtxmath}
+\usepackage{graphicx, color}
+\usepackage{hyperref}
+\usepackage{pxjahyper}
+\usepackage{longtable} % 表組みに必要
+\usepackage{booktabs} % 表組みに必要
+\usepackage[backend=bibtex]{biblatex}
+\DeclarePrefChars{'-} % https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2313
+\addbibresource{references.bib}
+\nocite{*}
+\title{ご注文はうさぎですか?}
+\author{Wikipedia}
+\begin{document}
+\maketitle
+\tableofcontents
+\input{main}
+\printbibliography[title=参考文献]
+\end{document}
