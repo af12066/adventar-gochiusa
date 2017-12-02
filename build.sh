@@ -10,6 +10,7 @@ cp -R "${PROJECT_DIR}/src" "${BUILD_DIR}/"
 cp "${PROJECT_DIR}/.latexmkrc" "${BUILD_DIR}/"
 cd "${BUILD_DIR}/src"
 pandoc --filter pandoc-crossref \
+  -M "crossrefYaml=${BUILD_DIR}/src/template/config.yml" \
   --top-level-division=chapter \
   ./*.md -o ./main.tex
 mv "${BUILD_DIR}/src/template/boilerplate.tex" "${BUILD_DIR}/src"
