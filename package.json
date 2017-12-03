@@ -6,6 +6,9 @@
   "repository": "git@github.com:af12066/adventar-gochiusa.git",
   "author": "Takuma Hashimoto <ma16079@shibaura-it.ac.jp>",
   "license": "CC-BY-SA-3.0",
+  "scripts": {
+    "test": "textlint src/*.md"
+  },
   "dependencies": {},
   "devDependencies": {
     "textlint": "^9.1.1",
